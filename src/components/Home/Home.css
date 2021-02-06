@@ -1,0 +1,109 @@
+.home__container {
+  background: #010101;
+}
+.three__grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.bg__image {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  font-size: clamp(1rem, 2.5vw, 4rem);
+  color: gold;
+}
+
+.top__row {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.two__col {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background: #010101;
+  color: floralwhite;
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.left__col,
+.right__col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+  flex: 1 0 50%;
+
+  background-blend-mode: hard-light;
+}
+
+.rev {
+  flex-direction: row-reverse;
+}
+.banner__container {
+  background: #010101;
+  color: #010101;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.banner__inner {
+  margin: auto;
+  font-size: clamp(1rem, 1.3rem, 1.5rem);
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-wrap: break-word;
+  background: floralwhite;
+  padding: 2rem;
+  flex-direction: column;
+}
+.banner__inner p {
+  max-width: 80vw;
+}
+.btn {
+  margin-top: 1rem;
+  font-size: clamp(1rem, 1.2rem, 1.5rem);
+  width: clamp(100px, 150px, 200px);
+  height: clamp(2rem, 3rem, 4rem);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn__primary {
+  background: #010101;
+  color: floralwhite;
+}
+.btn__light {
+  background: floralwhite;
+  color: #010101;
+}
+
+.btn:hover {
+  background: gold;
+  color: black;
+}
+@media screen and (max-width: 800px) {
+  .two__col {
+    flex-direction: column;
+    height: 50vh;
+  }
+}
