@@ -1,0 +1,16 @@
+.modal__container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  color: floralwhite;
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+  display: none;
+}
+
+.modal__container.active {
+  display: block;
+}
